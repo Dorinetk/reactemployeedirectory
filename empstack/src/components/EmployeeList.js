@@ -1,18 +1,28 @@
 import React from "react";
-import List from "./list/index";
-import ListHeader from "./ListHeader";
-import employees from "../employees.json"
+import employees from "../employees.json";
+import EmployeeRow from "./Employeerow";
 
-const employeeList = (props)  => {
-
-    return (
-      <div>
-
-        <ListHeader />
-        {/* Check on employees.id, is it unique? */}
-        {employees.map(employee => <List key={employees.id} {...employee}/>)}
-
-      </div>
-    );
+function EmployeeList(props) {
+  return (
+    <div>
+      <table className="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Image</th>
+            <th scope="col">Name</th>
+            <th scope="col">Phone</th>
+            <th scope="col">Email</th>
+            <th scope="col">DOB</th>
+          </tr>
+        </thead>
+        <tbody>
+          {employees.map(employee => (
+            <EmployeeRow {...employee} />
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
 }
-export default employeeList;
+
+export default EmployeeList;

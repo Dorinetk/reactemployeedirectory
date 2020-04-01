@@ -1,17 +1,15 @@
-import React from 'react';
+import React from "react";
 import Header from "./components/Header";
 import Search from "./components/Search";
-import EmployeeList from "./components/EmployeeList"
+import EmployeeList from "./components/EmployeeList";
 //import employees from "./employees.json"
-
-
 
 function App() {
   return (
-    <div>  
+    <div>
       <Header />
       <Search />
-      <EmployeeList/>
+      <EmployeeList />
     </div>
   );
 }
