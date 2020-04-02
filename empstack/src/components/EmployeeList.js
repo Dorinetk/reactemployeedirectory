@@ -1,5 +1,5 @@
 import React from "react";
-import employees from "../employees.json";
+//import employees from "../employees.json";
 import EmployeeRow from "./Employeerow";
 
 function EmployeeList(props) {
@@ -9,6 +9,7 @@ function EmployeeList(props) {
         <thead>
           <tr>
             <th scope="col">Image</th>
+
             <th scope="col">Name</th>
             <th scope="col">Phone</th>
             <th scope="col">Email</th>
@@ -16,7 +17,7 @@ function EmployeeList(props) {
           </tr>
         </thead>
         <tbody>
-          {employees.map(employee => (
+          {props.employees.map(employee => (
             <EmployeeRow {...employee} />
           ))}
         </tbody>

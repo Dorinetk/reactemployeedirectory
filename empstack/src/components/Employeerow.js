@@ -1,12 +1,8 @@
 import React from "react";
-import employees from "../employees.json";
 // Employee list generated with
 //https://randomuser.me/api/?inc=login,picture,name,phone,email,dob&format=JSON&results=100&nat=US
 
 class EmployeeRow extends React.Component {
-  state = {
-    employees
-  };
   render() {
     return (
       <tr key={this.props.login.uuid}>
