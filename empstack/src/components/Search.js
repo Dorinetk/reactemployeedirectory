@@ -1,6 +1,7 @@
 import React from "react";
 import EmployeeList from "./EmployeeList";
 import employee_list from "../employees.json";
+
 const styles = {
   sectionStyles: {
     background: "#F3F5F9",
@@ -33,7 +34,7 @@ class Search extends React.Component {
     this.setState({
       [name]: value,
       employees: employee_list.filter(emp =>
-        emp.name.first.includes(this.state.search)
+        emp.name.first.toLowerCase().includes(this.state.search)
       )
     });
   };
