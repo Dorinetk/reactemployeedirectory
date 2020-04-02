@@ -27,6 +27,7 @@ Some screenshots of the app:\
 ## Usage
 
 
+ 
 As a user, I am able to view my entire employee directory at once so that I have quick access to my employees information.
 I can also filter my employee by their first name. If possible, I can sort my table by the name property.
 
