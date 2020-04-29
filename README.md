@@ -4,7 +4,7 @@
 
 ## Description
 
-This app is employee directory with React. 
+This app is an employee directory with React. 
 
 The deployed application is available at: https://blueberry-crisp-93612.herokuapp.com/
 
