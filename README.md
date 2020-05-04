@@ -6,7 +6,7 @@
 
 This app is an employee directory with React. 
 
-The deployed application is available at: https://blueberry-crisp-93612.herokuapp.com/
+The deployed application is available at: https://pumpkin-shortcake-92351.herokuapp.com/
 
 
 ## Table of Content
